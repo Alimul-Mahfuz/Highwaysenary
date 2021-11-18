@@ -68,54 +68,90 @@ void display() {
    glVertex2f(1.0f,0.7f);
    glVertex2f(1.0f,1.0f);
    glEnd();
-   //Hills
+   //Hills1
    glBegin(GL_TRIANGLES);
-   glColor3f(0.0f,0.7f,0.0f);
+   glColor3f(0.5f,0.5f,0.0f);
    glVertex2f(-1.0f,0.7f);
-   glVertex2f(-0.8f,0.9f);
+   glVertex2f(-0.8f,0.95f);
    glVertex2f(-0.6,0.7f);
    glEnd();
-   //Hills
+
+   //Hills2
    glBegin(GL_TRIANGLES);
-   glColor3f(0.0f,0.7f,0.0f);
+   glColor3f(0.5f,0.5f,0.0f);
    glVertex2f(-0.8f,0.7f);
-   glVertex2f(-0.6f,0.9f);
+   glVertex2f(-0.6f,0.95f);
    glVertex2f(-0.5,0.7f);
+   glEnd();
+
+   //Hills3
+   glBegin(GL_TRIANGLES);
+   glColor3f(0.5f,0.5f,0.0f);
+   glVertex2f(-0.6f,0.7f);
+   glVertex2f(-0.3f,0.9f);
+   glVertex2f(-0.2,0.7f);
    glEnd();
 
    //ROAD CODE
    glBegin(GL_QUADS);
    glColor3f(0.0f,0.0f,0.0f);
-   glVertex2f(-1.0f,-0.3f);
-   glVertex2f(-1.0f,0.3f);
-   glVertex2f(1.0f,0.3f);
+   glVertex2f(-1.0f,0.1f);
+   glVertex2f(1.0f,0.1f);
    glVertex2f(1.0f,-0.3f);
+   glVertex2f(-1.0f,-0.3f);
    glEnd();
 
    //Strips on the road
    glBegin(GL_QUADS);
    glColor3f(1.0f,1.0f,1.0f);
-   glVertex2f(-0.7f,-0.005f);
-   glVertex2f(-0.7f,0.007f);
-   glVertex2f(-0.4f,0.007f);
-   glVertex2f(-0.4f,-0.007f);
+   glVertex2f(-0.7f,-0.075f);
+   glVertex2f(-0.7f,-0.09f);
+   glVertex2f(-0.4f,-0.09f);
+   glVertex2f(-0.4f,-0.075f);
    glEnd();
    //2nd strip on the road
    glBegin(GL_QUADS);
    glColor3f(1.0f,1.0f,1.0f);
-   glVertex2f(-0.2f,-0.005f);
-   glVertex2f(-0.2f,0.007f);
-   glVertex2f(0.1f,0.007f);
-   glVertex2f(0.1f,-0.007f);
+   glVertex2f(-0.2f,-0.075f);
+   glVertex2f(-0.2f,-0.09f);
+   glVertex2f(0.1f,-0.09f);
+   glVertex2f(0.1f,-0.075f);
    glEnd();
    //3rd strip on the road
    glBegin(GL_QUADS);
    glColor3f(1.0f,1.0f,1.0f);
-   glVertex2f(0.3f,-0.005f);
-   glVertex2f(0.3f,0.007f);
-   glVertex2f(0.6f,0.007f);
-   glVertex2f(0.6f,-0.007f);
+   glVertex2f(0.3f,-0.075f);
+   glVertex2f(0.3f,-0.09f);
+   glVertex2f(0.6f,-0.09f);
+   glVertex2f(0.6f,-0.075f);
    glEnd();
+
+   //School
+   glBegin(GL_QUADS);
+   glColor3f(1.0f,1.0f,0.4f);
+   glVertex2f(0.003f,0.3f);
+   glVertex2f(0.7f,0.3f);
+   glVertex2f(0.7f,0.6f);
+   glVertex2f(0.003f,0.6f);
+   glEnd();
+
+   //School Base
+   glBegin(GL_QUADS);
+   glColor3f(0.4f,0.0f,0.4f);
+   glVertex2f(-0.01f,0.275f);
+   glVertex2f(0.710f,0.275f);
+   glVertex2f(0.710f,0.3f);
+   glVertex2f(-0.01f,0.3f);
+   glEnd();
+
+
+
+
+
+
+
+
+
 
    //Car
    glPushMatrix();
